@@ -13,7 +13,7 @@ interface RepositoryMhs {
     fun getMhs(nim: String): Flow<Mahasiswa> // Mengambil data mahasiswa berdasarkan NIM
 
     // deleteMhs
-    suspend fun deleteMhs(mahasiswa: Mahasiswa)
+    suspend fun deleteMhs(mahasiswa: Mahasiswa) // Menghapus data mahasiswa
 
     // updateMhs
     suspend fun updateMhs(mahasiswa: Mahasiswa)
