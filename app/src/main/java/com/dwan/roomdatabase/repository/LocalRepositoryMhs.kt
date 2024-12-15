@@ -5,7 +5,7 @@ import com.dwan.roomdatabase.data.entity.Mahasiswa
 import kotlinx.coroutines.flow.Flow
 
 class LocalRepositoryMhs(
-    private val mahasiswaDao: MahasiswaDao
+    private val mahasiswaDao: MahasiswaDao // Objek untuk komunikasi langsung dengan tabel mahasiswa
 ) : RepositoryMhs {
 
     override suspend fun insertMhs(mahasiswa: Mahasiswa) {
