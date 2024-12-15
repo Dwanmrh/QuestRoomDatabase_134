@@ -7,8 +7,9 @@ import androidx.room.RoomDatabase
 import com.dwan.roomdatabase.data.dao.MahasiswaDao
 import com.dwan.roomdatabase.data.entity.Mahasiswa
 
-@Database(entities = [Mahasiswa::class], version = 1, exportSchema = false)
-abstract class KrsDatabase: RoomDatabase() {
+// Database Room
+@Database(entities = [Mahasiswa::class], version = 1, exportSchema = false) // Menggunakan entitas tabel Mahasiswa
+abstract class KrsDatabase: RoomDatabase() { // Kelas turunan dari RoomDatabase
 
     // Mendefinisikan fungsi untuk mengakses data Mahasiswa
     abstract fun mahasiswaDao(): MahasiswaDao
