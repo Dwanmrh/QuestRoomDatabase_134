@@ -27,11 +27,11 @@ import com.dwan.roomdatabase.ui.costumwidget.TopAppBar
 fun DetailMhsView(
     modifier: Modifier = Modifier,
     viewModel: DetailMhsViewModel = viewModel(factory = PenyediaViewModel.Factory),
-    onBack: () -> Unit = { },
+    onBack: () -> Unit = { }, // Callback
     onEditClick: (String) -> Unit = { },
     onDeleteClick: () -> Unit = { }
 ) {
-    val detailUiState by viewModel.detailUiState.collectAsState()
+    val detailUiState by viewModel.detailUiState.collectAsState() // Observasi state UI dari ViewModel
 
     Scaffold(
         topBar = {
@@ -44,7 +44,7 @@ fun DetailMhsView(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = {
-                    detailUiState.detailUiEvent?.nim?.let(onEditClick)
+                    detailUiState.detailUiEvent?.nim?.let(onEditClick) // Memanggil callback edit dengan NIM
                 },
                 shape = MaterialTheme.shapes.medium,
                 modifier = Modifier.padding(16.dp)
@@ -58,9 +58,9 @@ fun DetailMhsView(
     ) { innerPadding ->
         BodyDetailMhs(
             modifier = Modifier.padding(innerPadding),
-            detailUiState = detailUiState,
+            detailUiState = detailUiState, // Mengoper state ke komponen body
             onDeleteClick = {
-                viewModel.deleteMhs()
+                viewModel.deleteMhs() // Menghapus data mahasiswa melalui ViewModel
                 onDeleteClick()
             }
         )
