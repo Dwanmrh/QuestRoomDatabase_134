@@ -6,7 +6,7 @@ import com.dwan.roomdatabase.repository.LocalRepositoryMhs
 import com.dwan.roomdatabase.repository.RepositoryMhs
 
 interface InterfaceContainerApp {
-    val repositoryMhs: RepositoryMhs
+    val repositoryMhs: RepositoryMhs // Mengelola data mahasiswa
 }
 
 class ContainerApp(private val context: Context) : InterfaceContainerApp {
