@@ -136,7 +136,7 @@ fun BodyDetailMhs(
 @Composable
 fun ItemDetailMhs(
     modifier: Modifier = Modifier,
-    mahasiswa: Mahasiswa
+    mahasiswa: Mahasiswa // Data mahasiswa yang ditampilkan
 ) {
     Card(
         modifier = modifier.fillMaxWidth(),
@@ -167,7 +167,7 @@ fun ItemDetailMhs(
 fun ComponentDetailMhs(
     modifier: Modifier = Modifier,
     judul: String,
-    isinya: String
+    isinya: String // Isi data mahasiswa
 ) {
     Column(
         modifier = modifier.fillMaxWidth(),
@@ -180,7 +180,7 @@ fun ComponentDetailMhs(
             color = Color.Gray
         )
         Text(
-            text = isinya, fontSize = 20.sp,
+            text = isinya, fontSize = 20.sp, // Isi data
             fontWeight = FontWeight.Bold
         )
     }
@@ -193,17 +193,17 @@ private fun DeleteConfirmationDialog(
     modifier: Modifier = Modifier
 ) {
     AlertDialog(
-        onDismissRequest = { /* Do nothing */ },
+        onDismissRequest = { /* Do nothing */ }, // Tidak ada aksi saat dialog ditutup
         title = { Text("Delete Data") },
         text = { Text("Apakah anda yakin ingin menghapus data?") },
         modifier = modifier,
         dismissButton = {
-            TextButton(onClick = onDeleteCancel) {
+            TextButton(onClick = onDeleteCancel) { // Tombol batal
                 Text(text = "Cancel")
             }
         },
         confirmButton = {
-            TextButton(onClick = onDeleteConfirm) {
+            TextButton(onClick = onDeleteConfirm) { // Tombol konfirmasi
                 Text(text = "Yes")
             }
         }
