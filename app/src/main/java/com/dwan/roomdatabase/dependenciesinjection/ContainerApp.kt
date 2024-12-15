@@ -11,6 +11,6 @@ interface InterfaceContainerApp {
 
 class ContainerApp(private val context: Context) : InterfaceContainerApp {
     override val repositoryMhs: RepositoryMhs by lazy { // Menunda pembuatan objek hingga properti diakses
-        LocalRepositoryMhs(KrsDatabase.getDatabase(context).mahasiswaDao())
+        LocalRepositoryMhs(KrsDatabase.getDatabase(context).mahasiswaDao()) // Mengambil instance dari database room
     }
 }
