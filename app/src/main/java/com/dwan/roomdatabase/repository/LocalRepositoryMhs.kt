@@ -25,6 +25,6 @@ class LocalRepositoryMhs(
     }
 
     override suspend fun updateMhs(mahasiswa: Mahasiswa) { // Memperbarui data mahasiswa
-        mahasiswaDao.updateMahasiswa(mahasiswa)
+        mahasiswaDao.updateMahasiswa(mahasiswa) // Memanggil fungsi DAO untuk memperbarui data mahasiswa dari tabel
     }
 }
