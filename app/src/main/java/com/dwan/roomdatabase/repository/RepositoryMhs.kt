@@ -4,7 +4,7 @@ import com.dwan.roomdatabase.data.entity.Mahasiswa
 import kotlinx.coroutines.flow.Flow
 
 interface RepositoryMhs {
-    suspend fun insertMhs(mahasiswa: Mahasiswa)
+    suspend fun insertMhs(mahasiswa: Mahasiswa) // insertMhs
 
     // getAllMhs
     fun getAllMhs(): Flow<List<Mahasiswa>>
