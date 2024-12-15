@@ -28,5 +28,5 @@ interface MahasiswaDao { // Akses ke tabel Mahasiswa di database
     suspend fun updateMahasiswa(mahasiswa: Mahasiswa) // Memperbarui data di tabel
 
     @Insert
-    suspend fun insertMahasiswa(mahasiswa: Mahasiswa)
+    suspend fun insertMahasiswa(mahasiswa: Mahasiswa) // Menambah data ke tabel
 }
