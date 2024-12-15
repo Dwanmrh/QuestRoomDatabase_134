@@ -3,7 +3,7 @@ package com.dwan.roomdatabase.data.entity
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "mahasiswa")
+@Entity(tableName = "mahasiswa") // Menandai kelas entitas database room
 data class Mahasiswa(
     @PrimaryKey
     val nim: String,
