@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "mahasiswa") // Menandai kelas entitas database room
 data class Mahasiswa(
-    @PrimaryKey
+    @PrimaryKey // Menandai kolom dari tabel database
     val nim: String,
     val nama: String,
     val alamat: String,
