@@ -20,12 +20,12 @@ abstract class KrsDatabase: RoomDatabase() { // Kelas turunan dari RoomDatabase
 
         fun getDatabase(context: Context): KrsDatabase { // Membuat / mendapatkan instance database room
             return (Instance ?: synchronized(this) { // Mengecek apakah instance sudah dibuat sebelumnya
-                Room.databaseBuilder(
+                Room.databaseBuilder( // Fungsi untuk membuat database room
                     context,
                     KrsDatabase::class.java, // Class Database
                     name = "KrsDatabase" // Nama database
                 )
-                    .build().also { Instance = it }
+                    .build().also { Instance = it } // Membuat database baru dan menyimpan ke instance
             })
         }
     }
