@@ -7,7 +7,7 @@ interface RepositoryMhs {
     suspend fun insertMhs(mahasiswa: Mahasiswa) // insertMhs
 
     // getAllMhs
-    fun getAllMhs(): Flow<List<Mahasiswa>>
+    fun getAllMhs(): Flow<List<Mahasiswa>> // Mengembalikan data dalam list secara real-time
 
     // getMhs
     fun getMhs(nim: String): Flow<Mahasiswa>
