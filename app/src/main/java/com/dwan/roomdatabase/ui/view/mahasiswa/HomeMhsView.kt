@@ -44,6 +44,7 @@ import kotlinx.coroutines.launch
 
 @Composable
 fun HomeMhsView(
+    // ViewModel untuk data mahasiswa
     viewModel: HomeMhsViewModel = viewModel(factory = PenyediaViewModel.Factory),
     onDetailClick: (String) -> Unit, // Klik detail menerima parameter String (nim),
     onAddMhs: () -> Unit = { }, // Klik tambah mahasiswa tanpa parameter
@@ -57,7 +58,7 @@ fun HomeMhsView(
                 onBack = { },
             )
         },
-        floatingActionButton = {
+        floatingActionButton = { // Tombol tambah mahasiswa
             FloatingActionButton(
                 onClick = onAddMhs,
                 shape = MaterialTheme.shapes.medium,
@@ -84,11 +85,11 @@ fun HomeMhsView(
 
 @Composable
 fun BodyHomeMhsView(
-    homeUiState: HomeUiState,
+    homeUiState: HomeUiState, // State UI dari ViewModel
     onClick: (String) -> Unit = { },
     modifier: Modifier = Modifier
 ) {
-    val coroutineScope = rememberCoroutineScope()
+    val coroutineScope = rememberCoroutineScope() // Scope untuk menjalankan coroutine
     val snackbarHostState = remember { SnackbarHostState() } // Snackbar State
     when {
         homeUiState.isLoading -> {
@@ -97,7 +98,7 @@ fun BodyHomeMhsView(
                 modifier = modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center
             ) {
-                CircularProgressIndicator()
+                CircularProgressIndicator() // Menampilkan indikator loading
             }
         }
         homeUiState.isError -> {
@@ -146,14 +147,14 @@ fun ListMahasiswa(
     modifier: Modifier = Modifier,
     onClick: (String) -> Unit = { }
 ) {
-    LazyColumn(
+    LazyColumn( // Kolom yang dapat digulirkan
         modifier = modifier
     ) {
         items(
             items = listMhs,
             itemContent = { mhs ->
                 CardMhs(
-                    mhs = mhs,
+                    mhs = mhs, // Setiap item menjadi kartu mahasiswa
                     onClick = { onClick(mhs.nim)}
                 )
             }
