@@ -97,9 +97,8 @@ fun BodyDetailMhs(
                 )
                 Spacer(modifier = Modifier.padding(8.dp))
                 Button(
-                    onClick = {
-                        deleteConfirmationRequired = true
-                    }
+                    onClick = { deleteConfirmationRequired = true },
+                    modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(text = "Delete")
                 }
