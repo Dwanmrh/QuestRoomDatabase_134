@@ -8,7 +8,7 @@ import androidx.room.Update
 import com.dwan.roomdatabase.data.entity.Mahasiswa
 import kotlinx.coroutines.flow.Flow
 
-@Dao
+@Dao // Data Access Object
 interface MahasiswaDao {
 
     // fungsi get all data
