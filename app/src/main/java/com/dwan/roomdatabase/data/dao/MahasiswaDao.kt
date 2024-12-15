@@ -9,7 +9,7 @@ import com.dwan.roomdatabase.data.entity.Mahasiswa
 import kotlinx.coroutines.flow.Flow
 
 @Dao // Data Access Object
-interface MahasiswaDao {
+interface MahasiswaDao { // Akses ke tabel Mahasiswa di database
 
     // fungsi get all data
     @Query("SELECT * FROM mahasiswa")
