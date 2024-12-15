@@ -21,7 +21,7 @@ class LocalRepositoryMhs(
     }
 
     override suspend fun deleteMhs(mahasiswa: Mahasiswa) { // Menghapus data mahasiswa
-        mahasiswaDao.deleteMahasiswa(mahasiswa)
+        mahasiswaDao.deleteMahasiswa(mahasiswa) // Memanggil fungsi DAO untuk mengahpus data mahasiswa dari tabel
     }
 
     override suspend fun updateMhs(mahasiswa: Mahasiswa) { // Memperbarui data mahasiswa
