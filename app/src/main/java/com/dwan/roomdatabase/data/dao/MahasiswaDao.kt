@@ -13,7 +13,7 @@ interface MahasiswaDao { // Akses ke tabel Mahasiswa di database
 
     // fungsi get all data
     @Query("SELECT * FROM mahasiswa")
-    fun getAllMahasiswa(): Flow<List<Mahasiswa>>
+    fun getAllMahasiswa(): Flow<List<Mahasiswa>> // Data diperbarui secara real-time
 
     // get Mahasiswa
     @Query("SELECT * FROM mahasiswa WHERE nim = :nim")
