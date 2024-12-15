@@ -70,9 +70,10 @@ fun DetailMhsView(
 @Composable
 fun BodyDetailMhs(
     modifier: Modifier = Modifier,
-    detailUiState: DetailUiState = DetailUiState(),
+    detailUiState: DetailUiState = DetailUiState(), // Default state UI detail mahasiswa
     onDeleteClick: () -> Unit = {}
 ) {
+    // state untuk dialog konfirmasi hapus
     var deleteConfirmationRequired by rememberSaveable { mutableStateOf(false) }
 
     when {
@@ -81,17 +82,18 @@ fun BodyDetailMhs(
                 modifier = modifier.fillMaxSize(),
                 contentAlignment = Alignment.Center
             ) {
-                CircularProgressIndicator()
+                CircularProgressIndicator() // Menampilkan loading spinner
             }
         }
 
-        detailUiState.detailUiEvent != null -> {
+        detailUiState.detailUiEvent != null -> { // Jika data mahasiswa tersedia
             Column(
                 modifier = modifier
                     .fillMaxWidth()
                     .padding(16.dp)
             ) {
                 ItemDetailMhs(
+                    // Konversi UI state ke entity mahasiswa
                     mahasiswa = detailUiState.detailUiEvent.toMahasiswaEntity(),
                     modifier = Modifier
                 )
@@ -125,7 +127,7 @@ fun BodyDetailMhs(
                 onDeleteClick()
             },
             onDeleteCancel = {
-                deleteConfirmationRequired = false
+                deleteConfirmationRequired = false // Menutup dialog tanpa hapus
             }
         )
     }
