@@ -10,7 +10,7 @@ interface RepositoryMhs {
     fun getAllMhs(): Flow<List<Mahasiswa>> // Mengembalikan data dalam list secara real-time
 
     // getMhs
-    fun getMhs(nim: String): Flow<Mahasiswa>
+    fun getMhs(nim: String): Flow<Mahasiswa> // Mengambil data mahasiswa berdasarkan NIM
 
     // deleteMhs
     suspend fun deleteMhs(mahasiswa: Mahasiswa)
