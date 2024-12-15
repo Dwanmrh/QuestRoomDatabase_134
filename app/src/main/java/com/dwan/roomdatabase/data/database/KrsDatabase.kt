@@ -16,10 +16,10 @@ abstract class KrsDatabase: RoomDatabase() { // Kelas turunan dari RoomDatabase
 
     companion object {
         @Volatile // Mendefinisikan bahwa nilai variabel Instance selalu sama di semua thread
-        private var Instance: KrsDatabase? = null
+        private var Instance: KrsDatabase? = null // Menyimpan satu2 nya instance database yang digunakan
 
-        fun getDatabase(context: Context): KrsDatabase {
-            return (Instance ?: synchronized(this) {
+        fun getDatabase(context: Context): KrsDatabase { // Membuat / mendapatkan instance database room
+            return (Instance ?: synchronized(this) { // Mengecek apakah instance sudah dibuat sebelumnya
                 Room.databaseBuilder(
                     context,
                     KrsDatabase::class.java, // Class Database
