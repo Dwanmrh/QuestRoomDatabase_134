@@ -1,26 +1,26 @@
 Home
-![SS_RoomDatabase_Home](https://github.com/user-attachments/assets/0c336620-23c0-4a52-91c5-a230e68f5907)
+![SS_RoomDatabase_Home](https://github.com/user-attachments/assets/083c42ac-b0cf-4825-8587-110c9258ffd7)
 
 Insert
-![SS_RoomDatabase_Insert](https://github.com/user-attachments/assets/749ea39c-10f3-48e3-a216-49458b732238)
+![SS_RoomDatabase_Insert](https://github.com/user-attachments/assets/ef8b8b45-c9ba-42c6-bd27-f2f0b4e4d06c)
 
 Setelah Insert
-![SS_RoomDatabase_InsertHasil](https://github.com/user-attachments/assets/b717eb52-e1e4-4db2-a719-b96bcbb08185)
+![SS_RoomDatabase_InsertHasil](https://github.com/user-attachments/assets/b90721e2-3a7c-43a9-8684-a0741a781dc2)
 
 Detail
-![SS_RoomDatabase_Detail](https://github.com/user-attachments/assets/c5912875-3d9b-42ff-a0d2-3d3a83e49723)
+![SS_RoomDatabase_Detail](https://github.com/user-attachments/assets/62cb609e-8389-490e-9302-14b9af2f7650)
 
 Konfirmasi Delete
-![SS_RoomDatabase_Detail_DeleteConfirm](https://github.com/user-attachments/assets/67cd6e3b-3b68-48c7-b7aa-0cf6ba9ef43a)
+![SS_RoomDatabase_Detail_DeleteConfirm](https://github.com/user-attachments/assets/a43ee5f8-20b2-4e91-b7b0-76fa9b1503be)
 
 Setelah Delete
-![SS_RoomDatabase_Detail_AfterDelete](https://github.com/user-attachments/assets/c577e47a-93d0-4196-bab4-07ea0156830f)
+![SS_RoomDatabase_Detail_AfterDelete](https://github.com/user-attachments/assets/84393014-bf17-411e-9fbc-ac9cfbb9aeb1)
 
 Validasi saat Add Data Mahasiswa yang kosong
-![SS_RoomDatabase_Insert_ConfirmSimpan](https://github.com/user-attachments/assets/e4ba915f-3af0-4248-9fe0-f794d875c52e)
+![SS_RoomDatabase_Insert_ConfirmSimpan](https://github.com/user-attachments/assets/64ddbcb4-8d31-4cae-b3f1-d6b68d17fd2b)
 
 Validasi saat Edit Data Mahasiswa tapi kosong
-![SS_RoomDatabase_Edit_ConfirmSimpan](https://github.com/user-attachments/assets/6ab0f4fd-2300-4de2-93b6-6b1b587f6042)
+![SS_RoomDatabase_Edit_ConfirmSimpan](https://github.com/user-attachments/assets/6eeaee21-64d7-4ec2-a2de-4342d1cef292)
 
 Database
-![SS_RoomDatabase_Database](https://github.com/user-attachments/assets/7ee642dd-6340-4fd1-85ae-d360cd94d722)
+![SS_RoomDatabase_Database](https://github.com/user-attachments/assets/cc352376-3e49-40da-a31c-5d89d8ff0e68)
